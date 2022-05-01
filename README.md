@@ -60,6 +60,8 @@ B. Server Packages
 - jsonwebtoken package
 - mongoose package
 - nodemon package
+- apollo v2.15.0 package
+- graphql v15.0.0 package
 
 C. Root Directory
 - concurrently package

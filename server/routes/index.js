@@ -4,9 +4,10 @@ const apiRoutes = require('./api');
 
 router.use('/api', apiRoutes);
 
+//commented out line to test out graphql logic, may need line later
 // serve up react front-end in production
-router.use((req, res) => {
+/*router.use((req, res) => {
   res.sendFile(path.join(__dirname, '../../client/build/index.html'));
-});
+});*/
 
 module.exports = router;

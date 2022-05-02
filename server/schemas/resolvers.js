@@ -61,11 +61,13 @@ const resolvers= {
             return {token, user};
         },
 
+        //add option for input later
         saveBook: async () =>
         {
 
         },
 
+        //empty for now
         removeBook: async () =>
         {
 

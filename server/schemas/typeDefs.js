@@ -20,7 +20,7 @@ type Book {
     link: String
 }
 
-# unsure of how to create auth type
+
 type Auth {
     token: ID!
     user: User
@@ -30,6 +30,14 @@ type Auth {
 type Query {
     me(username:String!): User
     users: [User]
+    user(username: String!): User
+}
+
+type Mutation {
+    login(email: String!, password: String!): Auth
+    addUser(username: String!, email: String!, password: String!): Auth
+    saveBook(bookId: String!, title: String!, authors: [String], description: String, image: String, link: String): User
+    removeBook(bookId: String!): User
 }
 `;
 
@@ -39,10 +47,5 @@ type Query {
 module.exports= typeDefs;
 
 /**
- * type Mutation {
-    login
-    addUser
-    saveBook
-    removeBook
-}
+ * 
  */
